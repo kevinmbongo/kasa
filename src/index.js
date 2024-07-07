@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import './index.css'
+import '../src/styles/index.scss'
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Error from './pages/Error'
