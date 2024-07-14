@@ -1,10 +1,3 @@
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}/*# sourceMappingURL=index.css.map */
+@import url(../components/Header/Header.scss);
+@import url(../pages/Home/Home.scss);
+@import url(../components/Footer/Footer.scss);/*# sourceMappingURL=index.css.map */

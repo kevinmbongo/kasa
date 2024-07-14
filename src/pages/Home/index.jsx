@@ -1,14 +1,13 @@
 import '../../styles/index.scss'
-import logo from '../../assets/images/LOGO.png'
 import Footer from '../../components/Footer'
 import Header from '../../components/Header'
 
 function Home() {
   return (
-    <div>
+    <div className="home_container">
       <Header />
-      <h1 className="App-header"> Page Home 🏠</h1>
-      <img src={logo} alt="log" />
+      <h1> Page Home 🏠</h1>
+
       <Footer />
     </div>
   )

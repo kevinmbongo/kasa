@@ -1,7 +1,10 @@
+import logoFooter from '../../assets/images/LOGO_footer.png'
+
 function Footer() {
   return (
-    <div>
-      <p> © 2020 Kasa. All rights reserved🏠</p>
+    <div className="footer_container">
+      <img className="footer_logo" src={logoFooter} alt="logo footer" />
+      <p> © 2020 Kasa. All rights reserved</p>
     </div>
   )
 }
