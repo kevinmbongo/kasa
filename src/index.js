@@ -8,6 +8,7 @@ import Home from './pages/Home'
 import reportWebVitals from './reportWebVitals'
 import Footer from './components/Footer'
 import Header from './components/Header'
+import About from './pages/About'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
@@ -16,6 +17,7 @@ root.render(
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/About" element={<About />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />

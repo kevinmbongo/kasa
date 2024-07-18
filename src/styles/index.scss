@@ -1,9 +1,17 @@
 @import url(../components/Header/Header.scss);
 @import url(../components/Footer/Footer.scss);
 @import url(../components/Thumbnail/Thumbnail.scss);
+@import url(../components/Dropdown/Dropdown.scss);
 
 @import url(../pages/Home/Home.scss);
 @import url(../pages/Error/Error.scss);
+@import url(../pages/About/About.scss);
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
 
 h1,
 h2,
@@ -13,7 +21,9 @@ h5,
 h6,
 p,
 a,
+i,
 span,
+button,
 body {
   margin: 0;
   padding: 0;
@@ -23,4 +33,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1240px;
+}
+
+.main_content {
+  flex: 1;
 }

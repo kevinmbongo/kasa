@@ -1,0 +1,36 @@
+.dorpdown_button {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 20px;
+  align-items: center;
+  border: none;
+  border-radius: 5px;
+  background: var(--Red, #ff6060);
+}
+.dorpdown_button_span {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 142.6%; /* 34.224px */
+}
+
+.dropdown_option_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  gap: 5px;
+  padding: 30px 28px 20px 20px;
+  border-radius: 10px 10px 5px 5px;
+  background: var(--Gray, rgba(246, 246, 246, 0.45));
+  p {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 142.6%; /* 25.668px */
+  }
+}

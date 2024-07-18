@@ -1,0 +1,12 @@
+.about_container {
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px;
+}
+.about_dropdown_section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  max-width: 950px;
+}
