@@ -1,11 +1,15 @@
+import { Link } from 'react-router-dom'
+
 function Thumbnail(props) {
-  const { title } = props
+  const { title, link } = props
   return (
-    <div className="thumbnail">
-      <div className="thumbnail_title">
-        <h2 className="thumbnail_h2">{title}</h2>
+    <Link className="link" to={link}>
+      <div className="thumbnail">
+        <div className="thumbnail_title">
+          <h2 className="thumbnail_h2">{title}</h2>
+        </div>
       </div>
-    </div>
+    </Link>
   )
 }
 export default Thumbnail

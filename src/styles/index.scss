@@ -2,10 +2,12 @@
 @import url(../components/Footer/Footer.scss);
 @import url(../components/Thumbnail/Thumbnail.scss);
 @import url(../components/Dropdown/Dropdown.scss);
+@import url(../components/Tag/Tag.scss);
 
 @import url(../pages/Home/Home.scss);
 @import url(../pages/Error/Error.scss);
 @import url(../pages/About/About.scss);
+@import url(../pages/Location/Location.scss);
 
 html,
 body {
@@ -40,6 +42,6 @@ body {
   max-width: 1240px;
 }
 
-.main_content {
-  flex: 1;
+.link {
+  text-decoration-line: none;
 }

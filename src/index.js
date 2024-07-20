@@ -9,6 +9,7 @@ import reportWebVitals from './reportWebVitals'
 import Footer from './components/Footer'
 import Header from './components/Header'
 import About from './pages/About'
+import Location from './pages/Location'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
@@ -18,6 +19,7 @@ root.render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/About" element={<About />} />
+        <Route path="/Location" element={<Location />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />

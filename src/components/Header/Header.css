@@ -2,14 +2,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  margin-top: 40px;
 }
 
 .header_nav {
   display: flex;
   justify-content: center;
   gap: 60px;
-  padding-right: 40px;
 }
 
 .header_nav_link {

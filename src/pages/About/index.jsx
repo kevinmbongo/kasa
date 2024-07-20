@@ -3,7 +3,7 @@ import Dropdown from '../../components/Dropdown'
 
 function About() {
   return (
-    <div className="centered_flex about_container main_content">
+    <div className="centered_flex about_container">
       <section>
         <img className="home_banner_img" src={AboutPicture} alt="home" />
       </section>

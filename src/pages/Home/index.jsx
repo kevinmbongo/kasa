@@ -15,7 +15,7 @@ function Home() {
         {Array(6)
           .fill(0)
           .map((_, index) => (
-            <Thumbnail title="Titre de la location" />
+            <Thumbnail title="Titre de la location" link="/Location" />
           ))}
       </section>
     </div>
