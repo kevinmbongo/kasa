@@ -1,0 +1,25 @@
+.carousel {
+  display: flex;
+  position: relative;
+}
+.carousel .carousel_img {
+  width: 1240px;
+  height: 415px;
+  flex-shrink: 0;
+  border-radius: 25px;
+  background: lightgray 50%/cover no-repeat;
+}
+.carousel .arrow_left {
+  position: absolute;
+  left: 20px;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+}
+.carousel .arrow_right {
+  position: absolute;
+  right: 20px;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+}/*# sourceMappingURL=Carrousel.css.map */

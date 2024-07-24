@@ -4,26 +4,23 @@
   padding: 40px;
 }
 
-.location_profile_section {
+.location_carouselection {
   display: flex;
   justify-content: space-between;
 }
-
-.photo_profile {
+carousel .photo_profile {
   width: 50px;
   height: 50px;
   border-radius: 100%;
   background-color: aliceblue;
 }
-
-.location_main {
+carousel .location_main {
   display: flex;
   flex-direction: column;
   gap: 30px;
   padding-top: 30px;
 }
-
-.location_title {
+carousel .location_title {
   display: flex;
   flex-direction: column;
   gap: 21px;
@@ -78,4 +75,4 @@
   justify-content: space-between;
   max-width: 100%;
   gap: 76px;
-}/*# sourceMappingURL=Location.css.map */
+} /*# sourceMappingURL=Location.css.map */

@@ -3,6 +3,7 @@
 @import url(../components/Thumbnail/Thumbnail.scss);
 @import url(../components/Dropdown/Dropdown.scss);
 @import url(../components/Tag/Tag.scss);
+@import url(../components/Carousel/Carousel.scss);
 @import url(../pages/Home/Home.scss);
 @import url(../pages/Error/Error.scss);
 @import url(../pages/About/About.scss);

@@ -1,38 +1,45 @@
 import { useParams } from 'react-router-dom'
-import locationPicture from '../../assets/images/Background.png'
+
 import Dropdown from '../../components/Dropdown'
 import Tag from '../../components/Tag'
 import { locations } from '../../data/Location'
+import Carousel from '../../components/Carousel'
 function Location() {
   const { idLocation } = useParams()
-  console.log(idLocation)
+  // function findId() {
+  //   locations.find((location) => location.id === idLocation)
+  // }
+
+  function findCurrentLocation(array, id) {
+    const foundObject = array.find((obj) => obj.id === id)
+    return foundObject || null
+  }
+
+  const currentLocation = findCurrentLocation(locations, idLocation)
+
   return (
     <div className="centered_flex location_container ">
-      <div className="container ">
-        <img className="location_img" src={locationPicture} alt="home" />
+      <div className="container">
+        <Carousel images={currentLocation.pictures} />
 
         <div className="location_main">
           <section className="location_profile_section">
             <div className="location_title">
               <div>
-                <h2 className="location_title_h2">
-                  Cozy loft on the Canal Saint-Martin
-                </h2>
+                <h2 className="location_title_h2">{currentLocation.title}</h2>
                 <span className="location_title_span">
-                  Paris, Île-de-France
+                  {currentLocation.location}
                 </span>
               </div>
               <div className="location_tag_container">
-                {Array(3)
-                  .fill(0)
-                  .map((_, index) => (
-                    <Tag key={index} tagName="Paris 10" />
-                  ))}
+                {currentLocation.tags.map((tagName, index) => (
+                  <Tag key={index} tagName={tagName} />
+                ))}
               </div>
             </div>
             <div className="location_profile_info">
               <div className="location_photo_profile">
-                <p>Alexandre Dumas</p>
+                <p>{currentLocation.host.name}</p>
                 <svg
                   width="64"
                   height="64"
@@ -94,15 +101,9 @@ function Location() {
             </div>
           </section>
           <section className="location_dropdown_section">
-            <Dropdown
-              name="Description"
-              text=" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint quidem, debitis ullam quos voluptatibus aliquid! Reiciendis nisi, minus exercitationem molestiae, ab dolorum aliquid officiis assumenda eum asperiores voluptatem accusamus quae? "
-            />
+            <Dropdown name="Déscrition" text={currentLocation.description} />
 
-            <Dropdown
-              name="Équipements"
-              text=" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint quidem, debitis ullam quos voluptatibus aliquid! Reiciendis nisi, minus exercitationem molestiae, ab dolorum aliquid officiis assumenda eum asperiores voluptatem accusamus quae?"
-            />
+            <Dropdown name="Équipements" text={currentLocation.equipments} />
           </section>
         </div>
       </div>
