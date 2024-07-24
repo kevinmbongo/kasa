@@ -43,6 +43,11 @@
   }
 }
 
+.location_tag_container {
+  display: flex;
+  gap: 10px;
+}
+
 .location_profile_info {
   display: flex;
   flex-direction: column;

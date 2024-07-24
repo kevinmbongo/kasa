@@ -1,6 +1,7 @@
 import '../../styles/index.scss'
 import homePicture from '../../assets/images/Home_picture.png'
 import Thumbnail from '../../components/Thumbnail'
+import { locations } from '../../data/Location'
 
 function Home() {
   return (
@@ -12,11 +13,13 @@ function Home() {
         </div>
       </section>
       <section className="home_main_section">
-        {Array(6)
-          .fill(0)
-          .map((_, index) => (
-            <Thumbnail title="Titre de la location" link="/Location" />
-          ))}
+        {locations.map((location) => (
+          <Thumbnail
+            key={location.id}
+            title={location.title}
+            link={`Location/${location.id}`}
+          />
+        ))}
       </section>
     </div>
   )

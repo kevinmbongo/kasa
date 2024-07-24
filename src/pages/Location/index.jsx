@@ -1,7 +1,11 @@
+import { useParams } from 'react-router-dom'
 import locationPicture from '../../assets/images/Background.png'
 import Dropdown from '../../components/Dropdown'
 import Tag from '../../components/Tag'
+import { locations } from '../../data/Location'
 function Location() {
+  const { idLocation } = useParams()
+  console.log(idLocation)
   return (
     <div className="centered_flex location_container ">
       <div className="container ">
@@ -18,7 +22,13 @@ function Location() {
                   Paris, Île-de-France
                 </span>
               </div>
-              <Tag />
+              <div className="location_tag_container">
+                {Array(3)
+                  .fill(0)
+                  .map((_, index) => (
+                    <Tag key={index} tagName="Paris 10" />
+                  ))}
+              </div>
             </div>
             <div className="location_profile_info">
               <div className="location_photo_profile">

@@ -45,6 +45,11 @@
   line-height: 142.6%; /* 25.668px */
 }
 
+.location_tag_container {
+  display: flex;
+  gap: 10px;
+}
+
 .location_profile_info {
   display: flex;
   flex-direction: column;
