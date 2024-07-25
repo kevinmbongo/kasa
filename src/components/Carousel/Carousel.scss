@@ -8,6 +8,18 @@
     border-radius: 25px;
     background: lightgray 50% / cover no-repeat;
   }
+  .carousel_index {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    color: #fff;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%; /* 25.668px */
+  }
   .arrow_left {
     position: absolute;
     left: 20px;

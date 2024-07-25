@@ -36,6 +36,7 @@ function Carousel({ images }) {
         src={images[currentIndex]}
         alt={`Slide ${currentIndex}`}
       />
+      <div className="carousel_index">{`${currentIndex + 1}/${images.length}`}</div>
       <button className="arrow_right" onClick={nextImage}>
         <svg
           xmlns="http://www.w3.org/2000/svg"

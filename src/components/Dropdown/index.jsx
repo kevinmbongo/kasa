@@ -1,17 +1,20 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 
 function Dropdown(props) {
   const { text, name, equipments } = props
+
+  const [openDropdown, setOpenDropdown] = useState(false)
+
   const handleDropdown = () => {
     setOpenDropdown(!openDropdown)
   }
-  const [openDropdown, setOpenDropdown] = useState(false)
+
   return (
     <div className="dropdown_container">
-      <div className="dorpdown_bar">
-        <span className="dorpdown_span">{name}</span>
-        {openDropdown ? (
-          <button className="dorpdown_button" onClick={() => handleDropdown()}>
+      <div className="dropdown_bar">
+        <span className="dropdown_span">{name}</span>
+        <button className="dropdown_button" onClick={handleDropdown}>
+          {openDropdown ? (
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="32"
@@ -24,9 +27,7 @@ function Dropdown(props) {
                 fill="white"
               />
             </svg>
-          </button>
-        ) : (
-          <button className="dorpdown_button" onClick={() => handleDropdown()}>
+          ) : (
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="33"
@@ -39,22 +40,22 @@ function Dropdown(props) {
                 fill="white"
               />
             </svg>
-          </button>
-        )}
-      </div>
-      {openDropdown ? (
-        <section className="dropdown_option_container">
-          {equipments ? (
-            equipments.map((equipment, index) => (
-              <div key={index} className="dropdown_option_equipement">
-                {equipment}
-              </div>
-            ))
-          ) : (
-            <p>{text}</p>
           )}
-        </section>
-      ) : null}
+        </button>
+      </div>
+      <section
+        className={`dropdown_option_container ${openDropdown ? 'open' : 'close'}`}
+      >
+        {equipments ? (
+          equipments.map((equipment, index) => (
+            <div key={index} className="dropdown_option_equipement">
+              {equipment}
+            </div>
+          ))
+        ) : (
+          <p>{text}</p>
+        )}
+      </section>
     </div>
   )
 }
