@@ -1,5 +1,5 @@
 .tag {
-  width: 115px;
+  min-width: 115px;
   height: 25px;
   flex-shrink: 0;
   border-radius: 10px;
@@ -12,4 +12,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: 142.6%; /* 19.964px */
+  padding: 0 10px;
+  white-space: nowrap;
+  overflow: clip;
 }/*# sourceMappingURL=Tag.css.map */

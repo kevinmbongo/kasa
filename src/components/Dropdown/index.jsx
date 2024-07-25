@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 function Dropdown(props) {
-  const { text, name } = props
+  const { text, name, equipments } = props
   const handleDropdown = () => {
     setOpenDropdown(!openDropdown)
   }
@@ -44,7 +44,15 @@ function Dropdown(props) {
       </div>
       {openDropdown ? (
         <section className="dropdown_option_container">
-          <p>{text}</p>
+          {equipments ? (
+            equipments.map((equipment, index) => (
+              <div key={index} className="dropdown_option_equipement">
+                {equipment}
+              </div>
+            ))
+          ) : (
+            <p>{text}</p>
+          )}
         </section>
       ) : null}
     </div>

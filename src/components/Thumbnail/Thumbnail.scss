@@ -5,6 +5,7 @@
   border-radius: 10px;
   background: #ff6060;
   position: relative;
+  object-fit: fill;
 
   &::after {
     content: '';
@@ -26,6 +27,7 @@
   display: flex;
   justify-content: start;
   align-items: end;
+  position: relative;
   height: 100%;
   width: 300px;
   color: #fff;
@@ -34,6 +36,7 @@
   font-style: normal;
   font-weight: 700;
 }
+
 .thumbnail_h2 {
   padding: 20px;
 }

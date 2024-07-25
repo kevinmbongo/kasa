@@ -18,6 +18,7 @@ function Home() {
             key={location.id}
             title={location.title}
             link={`Location/${location.id}`}
+            image={location.cover}
           />
         ))}
       </section>
