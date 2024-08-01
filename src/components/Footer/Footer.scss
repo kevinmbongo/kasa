@@ -10,7 +10,10 @@
 }
 
 .footer_logo {
-  width: 8.9vw;
+  width: 122px;
+  @media (max-width: 768px) {
+    width: 250px;
+  }
 }
 .footer_copyright {
   color: #fff;
@@ -20,4 +23,8 @@
   font-style: normal;
   font-weight: 500;
   line-height: 142.6%; /* 34.224px */
+  @media (max-width: 768px) {
+    font-size: 12px;
+    width: 122px;
+  }
 }

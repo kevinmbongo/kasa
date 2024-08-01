@@ -10,7 +10,12 @@
 }
 
 .footer_logo {
-  width: 8.9vw;
+  width: 122px;
+}
+@media (max-width: 768px) {
+  .footer_logo {
+    width: 250px;
+  }
 }
 
 .footer_copyright {
@@ -21,4 +26,10 @@
   font-style: normal;
   font-weight: 500;
   line-height: 142.6%; /* 34.224px */
+}
+@media (max-width: 768px) {
+  .footer_copyright {
+    font-size: 12px;
+    width: 122px;
+  }
 }/*# sourceMappingURL=Footer.css.map */

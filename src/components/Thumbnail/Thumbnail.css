@@ -15,6 +15,13 @@
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(10, 10, 10, 0) 42%, rgba(4, 4, 4, 0.2) 99.99%, rgba(0, 0, 0, 0.5) 100%);
   border-radius: inherit;
 }
+@media (max-width: 768px) {
+  .thumbnail {
+    width: 335px;
+    height: 255px;
+    flex-shrink: 0;
+  }
+}
 
 .thumbnail_title {
   display: flex;

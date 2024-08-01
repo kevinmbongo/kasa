@@ -1,11 +1,15 @@
 import { Link } from 'react-router-dom'
 import logo from '../../assets/images/LOGO.png'
+import logoSmall from '../../assets/images/LOGO_mobile.svg'
 
 function Header() {
   return (
     <header className=" centered_flex">
       <div className="header_container container">
-        <img src={logo} alt="log" />
+        <picture>
+          <source srcSet={logoSmall} media="(max-width: 720px)" />
+          <img src={logo} alt="logo" />
+        </picture>
         <nav className="header_nav">
           <Link className="header_nav_link" to="">
             Acceuil

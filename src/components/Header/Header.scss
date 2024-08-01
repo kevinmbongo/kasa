@@ -3,12 +3,18 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 40px;
-}
+  @media (max-width: 768px) {
+    margin-top: 20px;
+  }
 
-.header_nav {
-  display: flex;
-  justify-content: center;
-  gap: 60px;
+  .header_nav {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    @media (max-width: 768px) {
+      gap: 30px;
+    }
+  }
 }
 
 .header_nav_link {
@@ -22,5 +28,8 @@
   text-decoration-line: none;
   &:hover {
     text-decoration-line: underline;
+  }
+  @media (max-width: 768px) {
+    font-size: 15px;
   }
 }
