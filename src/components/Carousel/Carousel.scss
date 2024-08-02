@@ -7,6 +7,11 @@
     flex-shrink: 0;
     border-radius: 25px;
     background: lightgray 50% / cover no-repeat;
+    @media (max-width: 768px) {
+      width: 100%;
+      height: 255px;
+      border-radius: 10px;
+    }
   }
   .carousel_index {
     position: absolute;
@@ -19,6 +24,9 @@
     font-style: normal;
     font-weight: 500;
     line-height: 142.6%; /* 25.668px */
+    @media (max-width: 768px) {
+      visibility: hidden;
+    }
   }
   .arrow_left {
     position: absolute;
@@ -26,6 +34,8 @@
     height: 100%;
     background-color: transparent;
     border: none;
+    @media (max-width: 768px) {
+    }
   }
   .arrow_right {
     position: absolute;
@@ -33,5 +43,7 @@
     height: 100%;
     background-color: transparent;
     border: none;
+    @media (max-width: 768px) {
+    }
   }
 }

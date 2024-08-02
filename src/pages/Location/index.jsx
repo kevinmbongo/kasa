@@ -7,9 +7,6 @@ import Carousel from '../../components/Carousel'
 import Rating from '../../components/Rating'
 function Location() {
   const { idLocation } = useParams()
-  // function findId() {
-  //   locations.find((location) => location.id === idLocation)
-  // }
 
   function findCurrentLocation(array, id) {
     const foundObject = array.find((obj) => obj.id === id)
@@ -44,9 +41,7 @@ function Location() {
                 <img src={currentLocation.host.picture} alt="profile img" />
               </div>
 
-              <div className="location_rating">
-                <Rating rating={currentLocation.rating} />
-              </div>
+              <Rating rating={currentLocation.rating} />
             </div>
           </section>
           <section className="location_dropdown_section">

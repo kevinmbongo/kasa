@@ -3,10 +3,22 @@
   gap: 40px;
   padding: 40px;
 }
+@media (max-width: 768px) {
+  .location_container {
+    gap: 30px;
+    padding: 30px 20px;
+  }
+}
 
 .location_profile_section {
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .location_profile_section {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
 .photo_profile {
@@ -22,6 +34,12 @@
   gap: 30px;
   padding-top: 30px;
 }
+@media (max-width: 768px) {
+  .location_main {
+    gap: 20px;
+    padding-top: 15px;
+  }
+}
 
 .location_title {
   display: flex;
@@ -36,6 +54,11 @@
   font-weight: 500;
   line-height: 142.6%; /* 51.336px */
 }
+@media (max-width: 768px) {
+  .location_title .location_title_h2 {
+    font-size: 20px;
+  }
+}
 .location_title .location_title_span {
   color: #000;
   font-family: Montserrat;
@@ -44,16 +67,35 @@
   font-weight: 500;
   line-height: 142.6%; /* 25.668px */
 }
+@media (max-width: 768px) {
+  .location_title .location_title_span {
+    font-size: 16px;
+  }
+}
 
 .location_tag_container {
+  max-width: 360px;
   display: flex;
   gap: 10px;
+}
+@media (max-width: 768px) {
+  .location_tag_container {
+    font-size: 16px;
+    overflow: scroll;
+  }
 }
 
 .location_profile_info {
   display: flex;
   flex-direction: column;
   gap: 21px;
+}
+@media (max-width: 768px) {
+  .location_profile_info {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .location_photo_profile {
@@ -72,10 +114,22 @@
   font-weight: 500;
   line-height: 142.6%; /* 25.668px */
 }
+@media (max-width: 768px) {
+  .location_photo_profile p {
+    font-size: 14px;
+    width: 80px;
+  }
+}
 .location_photo_profile img {
   width: 64px;
   height: 64px;
   border-radius: 100%;
+}
+@media (max-width: 768px) {
+  .location_photo_profile img {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .location_dropdown_section {
@@ -83,4 +137,10 @@
   justify-content: space-between;
   max-width: 100%;
   gap: 76px;
+}
+@media (max-width: 768px) {
+  .location_dropdown_section {
+    flex-direction: column;
+    gap: 20px;
+  }
 }/*# sourceMappingURL=Location.css.map */

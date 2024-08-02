@@ -5,7 +5,7 @@
   align-items: center;
   color: white;
   background-color: black;
-  padding: 40px 0;
+  padding: 70px 0;
   width: 100%;
 }
 
@@ -14,7 +14,7 @@
 }
 @media (max-width: 768px) {
   .footer_logo {
-    width: 250px;
+    width: 300px;
   }
 }
 
@@ -29,7 +29,7 @@
 }
 @media (max-width: 768px) {
   .footer_copyright {
-    font-size: 12px;
-    width: 122px;
+    font-size: 18px;
+    width: 200px;
   }
 }/*# sourceMappingURL=Footer.css.map */

@@ -5,6 +5,13 @@
   border-radius: 10px;
   background: #ff6060;
 }
+@media (max-width: 768px) {
+  .tag {
+    height: 18px;
+    min-width: 50px;
+    border-radius: 5px;
+  }
+}
 .tag span {
   color: #fff;
   font-family: Montserrat;
@@ -15,4 +22,9 @@
   padding: 0 10px;
   white-space: nowrap;
   overflow: clip;
+}
+@media (max-width: 768px) {
+  .tag span {
+    font-size: 10px;
+  }
 }/*# sourceMappingURL=Tag.css.map */

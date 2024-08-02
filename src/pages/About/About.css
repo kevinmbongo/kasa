@@ -3,6 +3,12 @@
   gap: 50px;
   padding: 40px;
 }
+@media (max-width: 768px) {
+  .about_container {
+    gap: 30px;
+    padding: 20px;
+  }
+}
 
 .about_dropdown_section {
   display: flex;
@@ -10,4 +16,10 @@
   gap: 36px;
   width: 100%;
   max-width: 950px;
+}
+@media (max-width: 768px) {
+  .about_dropdown_section {
+    gap: 30px;
+    padding: 20px;
+  }
 }/*# sourceMappingURL=About.css.map */

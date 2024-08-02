@@ -9,6 +9,13 @@
   border-radius: 25px;
   background: lightgray 50%/cover no-repeat;
 }
+@media (max-width: 768px) {
+  .carousel .carousel_img {
+    width: 100%;
+    height: 255px;
+    border-radius: 10px;
+  }
+}
 .carousel .carousel_index {
   position: absolute;
   bottom: 20px;
@@ -20,6 +27,11 @@
   font-style: normal;
   font-weight: 500;
   line-height: 142.6%; /* 25.668px */
+}
+@media (max-width: 768px) {
+  .carousel .carousel_index {
+    visibility: hidden;
+  }
 }
 .carousel .arrow_left {
   position: absolute;

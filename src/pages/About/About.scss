@@ -2,6 +2,10 @@
   flex-direction: column;
   gap: 50px;
   padding: 40px;
+  @media (max-width: 768px) {
+    gap: 30px;
+    padding: 20px;
+  }
 }
 .about_dropdown_section {
   display: flex;
@@ -9,4 +13,8 @@
   gap: 36px;
   width: 100%;
   max-width: 950px;
+  @media (max-width: 768px) {
+    gap: 30px;
+    padding: 20px;
+  }
 }

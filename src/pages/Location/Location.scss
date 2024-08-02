@@ -2,11 +2,19 @@
   flex-direction: column;
   gap: 40px;
   padding: 40px;
+  @media (max-width: 768px) {
+    gap: 30px;
+    padding: 30px 20px;
+  }
 }
 
 .location_profile_section {
   display: flex;
   justify-content: space-between;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 .photo_profile {
   width: 50px;
@@ -19,6 +27,10 @@
   flex-direction: column;
   gap: 30px;
   padding-top: 30px;
+  @media (max-width: 768px) {
+    gap: 20px;
+    padding-top: 15px;
+  }
 }
 
 .location_title {
@@ -32,6 +44,9 @@
     font-style: normal;
     font-weight: 500;
     line-height: 142.6%; /* 51.336px */
+    @media (max-width: 768px) {
+      font-size: 20px;
+    }
   }
   .location_title_span {
     color: #000;
@@ -40,19 +55,33 @@
     font-style: normal;
     font-weight: 500;
     line-height: 142.6%; /* 25.668px */
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
   }
 }
 
 .location_tag_container {
+  max-width: 360px;
   display: flex;
   gap: 10px;
+  @media (max-width: 768px) {
+    font-size: 16px;
+    overflow: scroll;
+  }
 }
 
 .location_profile_info {
   display: flex;
   flex-direction: column;
   gap: 21px;
+  @media (max-width: 768px) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
+
 .location_photo_profile {
   display: flex;
   align-items: center;
@@ -67,11 +96,19 @@
     font-style: normal;
     font-weight: 500;
     line-height: 142.6%; /* 25.668px */
+    @media (max-width: 768px) {
+      font-size: 14px;
+      width: 80px;
+    }
   }
   img {
     width: 64px;
     height: 64px;
     border-radius: 100%;
+    @media (max-width: 768px) {
+      width: 50px;
+      height: 50px;
+    }
   }
 }
 
@@ -80,4 +117,8 @@
   justify-content: space-between;
   max-width: 100%;
   gap: 76px;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
