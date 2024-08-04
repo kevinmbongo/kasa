@@ -11,11 +11,11 @@ $easing: ease-in-out;
 @mixin slide-up($duration, $easing) {
   animation: slideUp $duration $easing forwards;
 }
-
+// Mixin pour l'animation de rotation de l'icon arrow vers le bas
 @mixin rotate-open($duration, $easing) {
   animation: rotateOpen $duration $easing forwards;
 }
-
+// Mixin pour l'animation de rotation de l'icon arrow vers le haut
 @mixin rotate-close($duration, $easing) {
   animation: rotateClose $duration $easing forwards;
 }
@@ -48,6 +48,7 @@ $easing: ease-in-out;
   }
 }
 
+// Keyframes pour la rotation de l'icon arrow vers le bas
 @keyframes rotateOpen {
   0% {
     transform: rotate(0deg);
@@ -56,7 +57,7 @@ $easing: ease-in-out;
     transform: rotate(-180deg);
   }
 }
-
+// Keyframes pour la rotation de l'icon arrow vers le haut
 @keyframes rotateClose {
   0% {
     transform: rotate(-180deg);
@@ -134,6 +135,7 @@ $easing: ease-in-out;
   &.close {
     @include slide-up($duration, $easing);
   }
+
   .dropdown_option_equipment {
     color: #000;
     font-family: Montserrat;

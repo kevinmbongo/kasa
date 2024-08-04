@@ -48,18 +48,24 @@ function Carousel({ images }) {
 
   return (
     <div className="carousel">
-      <button className="arrow_left" onClick={prevImage}>
-        {svgArrowLeft()}
-      </button>
+      {images.length > 1 && (
+        <button className="arrow_left" onClick={prevImage}>
+          {svgArrowLeft()}
+        </button>
+      )}
       <img
         className="carousel_img"
         src={images[currentIndex]}
         alt={`Slide ${currentIndex}`}
       />
-      <div className="carousel_index">{`${currentIndex + 1}/${images.length}`}</div>
-      <button className="arrow_right" onClick={nextImage}>
-        {svgArrowRight()}
-      </button>
+      {images.length > 1 && (
+        <div className="carousel_index">{`${currentIndex + 1}/${images.length}`}</div>
+      )}
+      {images.length > 1 && (
+        <button className="arrow_right" onClick={nextImage}>
+          {svgArrowRight()}
+        </button>
+      )}
     </div>
   )
 }

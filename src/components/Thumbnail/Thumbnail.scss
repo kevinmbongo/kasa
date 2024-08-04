@@ -5,7 +5,7 @@
   border-radius: 10px;
   background: #ff6060;
   position: relative;
-  object-fit: fill;
+  object-fit: cover;
 
   &::after {
     content: '';

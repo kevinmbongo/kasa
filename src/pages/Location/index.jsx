@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom'
 
 import Dropdown from '../../components/Dropdown'
+import Error from '../Error/index'
 import Tag from '../../components/Tag'
 import { locations } from '../../data/Location'
 import Carousel from '../../components/Carousel'
@@ -14,7 +15,9 @@ function Location() {
   }
 
   const currentLocation = findCurrentLocation(locations, idLocation)
-
+  if (currentLocation == null) {
+    return <Error />
+  }
   return (
     <div className="centered_flex location_container ">
       <div className="container">

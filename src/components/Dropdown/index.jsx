@@ -1,11 +1,9 @@
 import React, { useState } from 'react'
-import { useMediaQuery } from 'react-responsive'
 
 function Dropdown(props) {
   const { text, name, equipments } = props
 
   const [openDropdown, setOpenDropdown] = useState(false)
-  const isMobile = useMediaQuery({ maxWidth: 768 })
 
   const handleDropdown = () => {
     setOpenDropdown(!openDropdown)
