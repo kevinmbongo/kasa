@@ -1,0 +1,27 @@
+.tag {
+  min-width: 115px;
+  height: 25px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #ff6060;
+  @media (max-width: 768px) {
+    height: 18px;
+    min-width: 50px;
+    border-radius: 5px;
+  }
+
+  span {
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%; /* 19.964px */
+    padding: 0 10px;
+    white-space: nowrap;
+    overflow: clip;
+    @media (max-width: 768px) {
+      font-size: 10px;
+    }
+  }
+}

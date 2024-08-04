@@ -5,10 +5,31 @@
   align-items: center;
   color: white;
   background-color: black;
-  padding: 40px 0;
+  padding: 70px 0;
   width: 100%;
 }
 
 .footer_logo {
-  width: 8.9vw;
+  width: 122px;
+}
+@media (max-width: 768px) {
+  .footer_logo {
+    width: 300px;
+  }
+}
+
+.footer_copyright {
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%; /* 34.224px */
+}
+@media (max-width: 768px) {
+  .footer_copyright {
+    font-size: 18px;
+    width: 200px;
+  }
 }/*# sourceMappingURL=Footer.css.map */

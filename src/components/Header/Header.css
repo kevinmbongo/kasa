@@ -2,14 +2,22 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  margin-top: 40px;
 }
-
-.header_nav {
+@media (max-width: 768px) {
+  .header_container {
+    margin-top: 20px;
+  }
+}
+.header_container .header_nav {
   display: flex;
   justify-content: center;
   gap: 60px;
-  padding-right: 40px;
+}
+@media (max-width: 768px) {
+  .header_container .header_nav {
+    gap: 30px;
+  }
 }
 
 .header_nav_link {
@@ -24,4 +32,9 @@
 }
 .header_nav_link:hover {
   text-decoration-line: underline;
+}
+@media (max-width: 768px) {
+  .header_nav_link {
+    font-size: 15px;
+  }
 }/*# sourceMappingURL=Header.css.map */

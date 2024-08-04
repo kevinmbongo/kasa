@@ -1,19 +1,25 @@
 import { Link } from 'react-router-dom'
 import logo from '../../assets/images/LOGO.png'
+import logoSmall from '../../assets/images/LOGO_mobile.svg'
 
 function Header() {
   return (
-    <div className="header_container">
-      <img src={logo} alt="log" />
-      <nav className="header_nav">
-        <Link className="header_nav_link" to="">
-          Acceuil
-        </Link>
-        <Link className="header_nav_link" to="">
-          A Propos
-        </Link>
-      </nav>
-    </div>
+    <header className=" centered_flex">
+      <div className="header_container container">
+        <picture>
+          <source srcSet={logoSmall} media="(max-width: 720px)" />
+          <img src={logo} alt="logo" />
+        </picture>
+        <nav className="header_nav">
+          <Link className="header_nav_link" to="">
+            Acceuil
+          </Link>
+          <Link className="header_nav_link" to="/About">
+            A Propos
+          </Link>
+        </nav>
+      </div>
+    </header>
   )
 }
 

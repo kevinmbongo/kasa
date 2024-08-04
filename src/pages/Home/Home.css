@@ -1,7 +1,32 @@
 .home_container {
   display: flex;
-  padding: 45px 100px 0 100px;
+  padding: 50px 100px;
   flex-direction: column;
   align-items: center;
   gap: 50px;
+}
+@media (max-width: 768px) {
+  .home_container {
+    gap: 22px;
+    padding: 20px;
+  }
+}
+
+.home_main_section {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 50px 60px;
+  padding: 55px;
+  flex-shrink: 0;
+  border-radius: 25px;
+  background: #f6f6f6;
+}
+@media (max-width: 768px) {
+  .home_main_section {
+    width: 100%;
+    grid-template-columns: auto;
+    gap: 20px;
+    background: none;
+    padding: 0;
+  }
 }/*# sourceMappingURL=Home.css.map */
