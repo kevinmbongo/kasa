@@ -2,7 +2,24 @@ import AboutPicture from '../../assets/images/kalen_emsley_Bkci_8qcdvQ_unsplash2
 import Banner from '../../components/Banner'
 import Dropdown from '../../components/Dropdown'
 
-const dropdownNames = ['Fiabilité', 'Respect', 'Service', 'Sécurité']
+const dropdownInfos = [
+  {
+    name: 'Fiabilité',
+    text: 'Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes.',
+  },
+  {
+    name: 'Respect',
+    text: 'La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.',
+  },
+  {
+    name: 'Service',
+    text: 'La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.',
+  },
+  {
+    name: 'Sécurité',
+    text: "La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes.",
+  },
+]
 
 function About() {
   return (
@@ -10,11 +27,11 @@ function About() {
       <Banner className="" src={AboutPicture} alt="banner picture" />
 
       <section className="about_dropdown_section">
-        {dropdownNames.map((dropdownName, index) => (
+        {dropdownInfos.map((dropdownInfo, index) => (
           <Dropdown
             key={index}
-            name={dropdownName}
-            text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolorum quia nisi omnis aliquam exercitationem iure blanditiis illum, sunt beatae repellat recusandae ad tenetur quos. Odio omnis dolores dolorum aspernatur."
+            name={dropdownInfo.name}
+            text={dropdownInfo.text}
           />
         ))}
       </section>

@@ -7,7 +7,7 @@ function Header() {
     <header className=" centered_flex">
       <div className="header_container container">
         <picture>
-          <source srcSet={logoSmall} media="(max-width: 720px)" />
+          <source srcSet={logoSmall} media="(max-width: 768px)" />
           <img src={logo} alt="logo" />
         </picture>
         <nav className="header_nav">
