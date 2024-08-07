@@ -26,6 +26,11 @@
     height: 255px;
     flex-shrink: 0;
   }
+  @media (min-width: 768px) and (max-width: 937px) {
+    width: 30vw;
+    height: 30vh;
+    flex-shrink: 0;
+  }
 }
 
 .thumbnail_title {
@@ -44,4 +49,10 @@
 .thumbnail_h2 {
   padding: 20px;
   font-size: 18px;
+  z-index: 2;
+  @media (min-width: 768px) and (max-width: 937px) {
+    width: 25vw;
+    padding: 15px;
+    font-size: 0.85em;
+  }
 }

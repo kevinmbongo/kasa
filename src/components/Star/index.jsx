@@ -5,8 +5,8 @@ function Star({ active }) {
   const isMobile = useMediaQuery({ maxWidth: 768 })
   return (
     <svg
-      width={isMobile ? '30' : '36'}
-      height={isMobile ? '30' : '36'}
+      width="30"
+      height="30"
       viewBox="0 0 36 36"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

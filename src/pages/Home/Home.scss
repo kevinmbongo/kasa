@@ -4,23 +4,32 @@
   flex-direction: column;
   align-items: center;
   gap: 50px;
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
+  .home_container {
     gap: 22px;
     padding: 20px;
   }
 }
 
 .home_main_section {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  gap: 50px 60px;
-  padding: 55px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 30px 2vh;
+  max-width: 1240px;
+  padding: 40px 2vh;
   flex-shrink: 0;
   border-radius: 25px;
   background: #f6f6f6;
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
+  .home_main_section {
     width: 100%;
-    grid-template-columns: auto;
+    display: grid;
+    grid-template-columns: 1fr; /* Une seule colonne pour les écrans de tablette */
     gap: 20px;
     background: none;
     padding: 0;
